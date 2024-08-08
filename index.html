@@ -11,13 +11,40 @@
 
     <link rel="stylesheet" type="text/css" href="./output.css">
 </head>
+
 <body>
+    <header class="fixed w-full top-0 z-50 bg-primary-blue">
+        <div class="py-3 lg:py-5 px-5 lg:px-20 flex justify-between items-center">
+            <a href="/">
+                <img class="rounded-lg" alt="Logo" fetchpriority="high" width="48" height="48" decoding="async"
+                    src="https://avatars.githubusercontent.com/u/116000?v=4">
+            </a>
+            <nav class="text-white text-lg tracking-widest flex gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent">
+                <ul class="bg-light top-16 right-0 w-64 text-base
+                shadow-2xl xl:shadow-none rounded-lg transition-all ease-linear z-50
+                xl:static xl:flex xl:rounded-none xl:w-auto xl:gap-14 
+                items-center">
+                    <li>
+                        <a class="w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme 
+                                        ease-linear xl:border-none relative  hover:text-theme font-semibold bg-transparent
+                                        border-b" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme 
+                                        ease-linear xl:border-none relative  hover:text-theme font-semibold bg-transparent
+                                        border-b" href="/services">Services</a>
+                    </li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="relative h-[calc(80vh)] text-white overflow-hidden">
-        <div class="bg-primary-blue h-full relative flex flex-col justify-center items-center text-center">     
+        <div class="bg-primary-blue h-full relative flex flex-col justify-center items-center text-center">
             <div class="z-20">
                 <h1 class="text-3xl font-bold tracking-tight text-zinc-100">
                     Hi, I'm <div class="text-primary-red hover:scale-105 inline-block">
-                        <a href="https://github.com/olafurjohannsson/olafurjohannsson/blob/main/cv.md" >Ólafur Aron
+                        <a href="https://github.com/olafurjohannsson/olafurjohannsson/blob/main/cv.md">Ólafur Aron
                         </a>
                         </span>
                 </h1>
@@ -26,21 +53,25 @@
         </div>
         <div class="absolute inset-0 z-10">
             <canvas id="canvas"></canvas>
-        </div> 
+        </div>
     </div>
     <div class="bg-primary-blue relative z-100 -mt-12 -mb-4 h-12 w-full overflow-hidden">
-        <svg width="100%" height="100%" viewBox="0 0 3431 347" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" preserveAspectRatio="none" style="
+        <svg width="100%" height="100%" viewBox="0 0 3431 347" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+            preserveAspectRatio="none" style="
             fill-rule: evenodd;
             clip-rule: evenodd;
             stroke-linejoin: round;
             stroke-miterlimit: 1.41421;
           ">
-          <path d="M0,347c455.317,-299.761 942.752,-432.753 1462.31,-259.881c862.781,236.634 1505.13,306.177 1968.69,-87.119l0,347l-3431,0Z" style="fill: rgb(244,244,245); fill-rule: nonzero"></path>
+            <path
+                d="M0,347c455.317,-299.761 942.752,-432.753 1462.31,-259.881c862.781,236.634 1505.13,306.177 1968.69,-87.119l0,347l-3431,0Z"
+                style="fill: rgb(244,244,245); fill-rule: nonzero"></path>
         </svg>
     </div>
     <div class="flex bg-zinc-100 h-screen mt-1 px-12">
         <div class="mt-12">
-            <h2 class="text-2xl text-center text-blueGray-600 font-bold flex flex-row">
+            <h2 class="text-2xl text-center text-blueGray-600 font-bold flex flex-col items-center justify-center">
                 Experience and Projects
             </h2>
         </div>
