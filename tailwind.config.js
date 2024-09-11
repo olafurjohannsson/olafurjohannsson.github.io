@@ -11,6 +11,7 @@ module.exports = {
       'primary-yellow': '#e9c46a',
       'primary-orange': '#f4a261',
       'primary-red': '#e76f51',
+      'dark': 'rgb(30 29 32)',
       ...colors
     },
     extend: {

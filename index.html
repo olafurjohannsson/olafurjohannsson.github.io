@@ -5,7 +5,8 @@
     <title>Ólafur Aron Jóhannsson</title>
     <!--SEO-->
     <meta name="description" content="Ólafur Aron Jóhannsson's personal website">
-    <meta name="keywords" content="Ólafur Aron Jóhannsson, Ólafur, Aron, Jóhannsson, personal, website">
+    <meta name="keywords"
+        content="Ólafur Aron Jóhannsson, Ólafur Aron, Ólafur, Software Developer, Software Engineer, personal, website">
     <meta name="author" content="Ólafur Aron Jóhannsson">
     <meta charset="UTF-8">
 
@@ -19,22 +20,37 @@
                 <img class="rounded-lg" alt="Logo" fetchpriority="high" width="128" height="128" decoding="async"
                     src="./logo1.png">
             </a>
-            <nav class="text-white text-lg tracking-widest flex gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent">
-                <ul class="bg-light top-16 right-0 w-64 text-base
+            <nav class="text-white text-lg tracking-widest flex 
+                    gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent">
+
+                <div class="block xl:hidden">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+                    <label class="relative select-none cursor-pointer flex justify-center items-center
+                    rounded-l w-12 h-12 p-2.5 pb-[11px] border border-dark" for="menu-btn">
+                        <span class="bg-white h-[1.75px] relative transition-all w-6
+                            after:bg-white after:block after:h-full after:absolute after:transition-all
+                            after:w-full after:top-[8px] bottom-[2.5px]"></span>
+                    </label>
+                </div>
+                <ul class="absolute bg-primary-blue top-16 right-0 w-64 text-base
                 shadow-2xl xl:shadow-none rounded-lg transition-all ease-linear z-50
                 xl:static xl:flex xl:rounded-none xl:w-auto xl:gap-14 
-                items-center">
-                    <li>
+                items-center max-h-0">
+                    <li class="bg-transparent z-50">
                         <a class="w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme 
                                         ease-linear xl:border-none relative  hover:text-theme font-semibold bg-transparent
-                                        border-b" href="/">Home</a>
+                                        hidden border-b" href="/">Home</a>
                     </li>
-                    <li>
+                    <li class="bg-transparent z-50">
                         <a class="w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme 
                                         ease-linear xl:border-none relative  hover:text-theme font-semibold bg-transparent
-                                        border-b" href="/services">Services</a>
+                                        hidden border-b" href="/services">Experience</a>
                     </li>
-                    <li>About</li>
+                    <li class="bg-transparent z-50">
+                        <a class="w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme 
+                                        ease-linear xl:border-none relative  hover:text-theme font-semibold bg-transparent
+                                        hidden border-b" href="/services">Services</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -69,20 +85,232 @@
                 style="fill: rgb(244,244,245); fill-rule: nonzero"></path>
         </svg>
     </div>
-    <div class="flex bg-zinc-100 h-screen mt-1 px-12">
-        <div class="mt-12 bg-center">
-            <h2 class="text-2xl text-center text-blueGray-600 font-bold flex flex-col items-center justify-center">
-                Experience and Projects
-            </h2>
+    <div class="flex bg-zinc-100 h-screen px-12 mt-20 xl:md-40 md:mt-28" id="about">
+        <div class="mt-12 flex">
+            <h2 class="text-2xl ">About me</h2>
+            <div>
+            <p>
+                As a seasoned Software Engineer with over a decade of experience, I specialize in developing cutting-edge software solutions across various industries, including Air Traffic Management, ticketing systems, and more. I currently serve at Tern Systems, where I contribute to mission-critical systems that support Iceland's vast airspace management. My work includes the design and development of next-generation tools like Polaris, an advanced aircraft surveillance display for air traffic controllers, and Air Archive, a web-based platform for replaying and analyzing surveillance data.
+            </p>
+Prior to this, I honed my expertise through roles in dynamic and fast-paced environments, including freelance work at Leiðir Verkfræðistofa and Venuepoint A/S. My diverse skill set spans multiple programming languages and platforms, such as C++, Python, JavaScript, C#, and MySQL, with extensive experience in system architecture, web-based applications, and database management.
+
+Throughout my career, I have focused on delivering high-quality, reliable solutions by leveraging advanced technologies like Qt, OpenGL, and cloud infrastructure to meet the evolving needs of clients and industries.
+            </p>
+        </div>
         </div>
     </div>
-    <div class="flex bg-primary-yellow h-screen">
+    <div class="flex bg-primary-red h-screen">
         <div class="">
-            <h2 class="text-2xl text-center font-bold flex flex-row">
-                I'm a <span class="text-primary-yellow">Web Developer</span>
-            </h2>
+
         </div>
     </div>
+
+    <footer class="bg-dark p-10 w-screen left-[calc(-50vw+50%)] relative md:p12 z-30">
+        <div class="justify-between gap-10 sm:gap-12 grid 
+        grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-16 xl:flex max-w-8xl mx-auto lg:px-16">
+            <div class="text_light_all">
+                <h2 class="text-xl mb-2">Socials</h2>
+                <ul>
+                    <li class="pt-2 hidden"><a href="mailto:amin@webdevamin.com" rel="noopener noreferrer"
+                            target="_blank" class="lg:text-base">
+                            <div class="flex items-center gap-1">
+                                <div class="w-6 h-5 flex items-center justify-start"><svg aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
+                                        </path>
+                                    </svg></div><span class="lg:text-base transition-all hover:text-theme">Email</span>
+                            </div>
+                        </a></li>
+                    <li class="pt-2 false"><a href="https://www.facebook.com/a.webdevamin" rel="noopener noreferrer"
+                            target="_blank" class="lg:text-base">
+                            <div class="flex items-center gap-1">
+                                <div class="w-6 h-5 flex items-center justify-start"><svg aria-hidden="true"
+                                        focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 320 512">
+                                        <path fill="currentColor"
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                        </path>
+                                    </svg></div><span
+                                    class="lg:text-base transition-all hover:text-theme">Facebook</span>
+                            </div>
+                        </a></li>
+                    <li class="pt-2 false"><a href="https://www.instagram.com/webdevamin" rel="noopener noreferrer"
+                            target="_blank" class="lg:text-base">
+                            <div class="flex items-center gap-1">
+                                <div class="w-6 h-5 flex items-center justify-start"><svg aria-hidden="true"
+                                        focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg></div><span
+                                    class="lg:text-base transition-all hover:text-theme">Instagram</span>
+                            </div>
+                        </a></li>
+                    <li class="pt-2 false"><a href="https://goo.gl/maps/KuPJhuTuNv2rK7RNA" rel="noopener noreferrer"
+                            target="_blank" class="lg:text-base">
+                            <div class="flex items-center gap-1">
+                                <div class="w-6 h-5 flex items-center justify-start"><svg aria-hidden="true"
+                                        focusable="false" data-prefix="fab" data-icon="google" class="svg-inline--fa fa-google transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 488 512">
+                                        <path fill="currentColor"
+                                            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                                        </path>
+                                    </svg></div><span class="lg:text-base transition-all hover:text-theme">Google</span>
+                            </div>
+                        </a></li>
+                    <li class="pt-2 false"><a href="https://www.linkedin.com/company/webdevamin"
+                            rel="noopener noreferrer" target="_blank" class="lg:text-base">
+                            <div class="flex items-center gap-1">
+                                <div class="w-6 h-5 flex items-center justify-start"><svg aria-hidden="true"
+                                        focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                        </path>
+                                    </svg></div><span
+                                    class="lg:text-base transition-all hover:text-theme">LinkedIn</span>
+                            </div>
+                        </a></li>
+                    <li class="pt-2 false"><a href="https://github.com/webdevamin" rel="noopener noreferrer"
+                            target="_blank" class="lg:text-base">
+                            <div class="flex items-center gap-1">
+                                <div class="w-6 h-5 flex items-center justify-start"><svg aria-hidden="true"
+                                        focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 496 512">
+                                        <path fill="currentColor"
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                        </path>
+                                    </svg></div><span class="lg:text-base transition-all hover:text-theme">GitHub</span>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="text_light_all">
+                <h2 class="text-xl mb-2">Links</h2>
+                <ul>
+                    <li class="pt-2 undefined"><a class="flex items-center gap-1" href="/">
+                            <div class="w-6 h-5 flex items-center 
+                                    justify-start"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="house" class="svg-inline--fa fa-house fa-sm transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 576 512">
+                                    <path fill="currentColor"
+                                        d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z">
+                                    </path>
+                                </svg></div><span class="lg:text-base transition-all 
+                                            hover:text-theme">Home</span>
+                        </a></li>
+                    <li class="pt-2 undefined"><a class="flex items-center gap-1" href="/services">
+                            <div class="w-6 h-5 flex items-center 
+                                    justify-start"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="circle-user" class="svg-inline--fa fa-circle-user fa-sm transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z">
+                                    </path>
+                                </svg></div><span class="lg:text-base transition-all 
+                                            hover:text-theme">Services</span>
+                        </a></li>
+                    <li class="pt-2 undefined"><a class="flex items-center gap-1" href="/projects">
+                            <div class="w-6 h-5 flex items-center 
+                                    justify-start"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="image" class="svg-inline--fa fa-image fa-sm transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z">
+                                    </path>
+                                </svg></div><span class="lg:text-base transition-all 
+                                            hover:text-theme">Projects</span>
+                        </a></li>
+                    <li class="pt-2 undefined"><a class="flex items-center gap-1" href="/blogs">
+                            <div class="w-6 h-5 flex items-center 
+                                    justify-start"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="bookmark" class="svg-inline--fa fa-bookmark fa-sm transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 384 512">
+                                    <path fill="currentColor"
+                                        d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z">
+                                    </path>
+                                </svg></div><span class="lg:text-base transition-all 
+                                            hover:text-theme">Blogs</span>
+                        </a></li>
+                    <li class="pt-2 undefined"><a class="flex items-center gap-1" href="/contact">
+                            <div class="w-6 h-5 flex items-center 
+                                    justify-start"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="address-book" class="svg-inline--fa fa-address-book fa-sm transition-all ease-linear duration-300
+        hover:opacity-70 undefined hover:rotate-[360deg]" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z">
+                                    </path>
+                                </svg></div><span class="lg:text-base transition-all 
+                                            hover:text-theme">Contact</span>
+                        </a></li>
+                    <li class="pt-2 hidden"><a class="flex items-center gap-1" href="/policy">
+                            <div class="w-6 h-5 flex items-center 
+                                    justify-start"></div><span class="lg:text-base transition-all 
+                                            hover:text-theme">Privacy policy</span>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-span-2 sm:col-span-1 border-t border-b hidden
+            border-t-white border-b-white py-8 sm:py-0 sm:border-none sm:block">
+                <h2 class="text-xl mb-2 text-light">Services</h2>
+                <ul class="text_light_all grid grid-cols-2 gap-x-7 
+                items-center sm:block">
+                    <li class="pt-2"><span class="lg:text-base false">Web Design</span></li>
+                    <li class="pt-2"><span class="lg:text-base false">Web Development</span></li>
+                    <li class="pt-2"><span class="lg:text-base false">Logo Design</span></li>
+                    <li class="pt-2"><span class="lg:text-base false">SEO &amp; Marketing</span></li>
+                </ul>
+                <div class="md:mt-4"><a class="mt-3 flex items-center lg:gap-3 lg:text-base 
+    text-sm font-semibold transition-all hover:gap-4 gap-2 drop-shadow-none
+     text_theme_all" href="/services"><span class="text-sm lg:text-base uppercase drop-shadow-none">Read
+                            more</span><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                            data-icon="arrow-right" class="svg-inline--fa fa-arrow-right " role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></a></div>
+            </div>
+            <div class="col-span-2 sm:col-span-1 false">
+                <h2 class="text-xl mb-2 text-light">Latest blogs</h2>
+                <ul class="text_light_all">
+                    <li class="pt-2"><a class="lg:text-base transition-all 
+                                        hover:text-theme" href="/blogs/how-to-hire-webdesigner">How to hire a reliable
+                            web designer</a></li>
+                    <li class="pt-2"><a class="lg:text-base transition-all 
+                                        hover:text-theme" href="/blogs/website-vs-webapplication">Website vs web
+                            application</a></li>
+                    <li class="pt-2"><a class="lg:text-base transition-all 
+                                        hover:text-theme" href="/blogs/vat-exemption-not-worth-it">VAT exemption as
+                            international not worth it</a></li>
+                </ul>
+                <div class="md:mt-4"><a class="mt-3 flex items-center lg:gap-3 lg:text-base 
+    text-sm font-semibold transition-all hover:gap-4 gap-2 drop-shadow-none
+     text_theme_all" href="/blogs"><span class="text-sm lg:text-base uppercase drop-shadow-none">More blogs</span><svg
+                            aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
+                            class="svg-inline--fa fa-arrow-right " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg></a></div>
+            </div>
+        </div>
+    </footer>
 
 
     </div>
