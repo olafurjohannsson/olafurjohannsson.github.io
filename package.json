@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.11"
+    "tailwindcss": "^3.4.11",
+    "vite": "^6.0.1"
   },
   "dependencies": {
     "fontawesome": "^5.6.3",
@@ -8,9 +9,8 @@
     "react-dom": "^18.3.1"
   },
   "scripts": {
-    "build": "tailwindcss -i ./input.css -o ./output.css",
-    "build:css": "tailwindcss -i ./input.css -o ./output.css --watch",
-    "serve": "npx live-server ./",
-    "start": "npm run build & npm run serve"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }

@@ -11,7 +11,9 @@ function start( isMobile ) {
         height = window.innerHeight;
         target = { x: width / 2, y: (height / 2)};
 
+
         canvas = document.getElementById('canvas');
+        console.log(canvas);
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext('2d');
