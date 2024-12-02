@@ -13,7 +13,7 @@ function start( isMobile ) {
 
 
         canvas = document.getElementById('canvas');
-        console.log(canvas);
+        
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext('2d');
