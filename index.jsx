@@ -6,6 +6,8 @@ import { About } from './about';
 import { Header } from './header';
 import { Footer } from './footer';
 
+import "./input.css"
+
 // Render your React component instead
 const root = createRoot(document.getElementById('app'));
 

@@ -5,7 +5,7 @@ export function Home() {
         <section id="home"
             className="bg-primary-blue flex relative h-[calc(75vh)] flex-col items-center justify-center text-center 
             lg:flex-row 2xl:max-w-[2000px] mx-auto max-w-[1000px]">
-            <div className="flex flex-col items-center lg:mb-0 lg:w-2/3 md:w-2/3 z-50">
+            <div className="flex flex-col items-center lg:w-2/3 md:w-2/3 z-50 p-4">
                 <h1 className="text-3xl text-zinc-200  lg:text-5xl">
                     Hi! My name is <span className="text-primary-red hover:scale-110">Ólafur Aron</span> and I am a software
                     developer based

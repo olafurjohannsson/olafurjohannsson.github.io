@@ -3,7 +3,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js,jsx,ts,tsx,vue}"],
   theme: {
     colors: {
       'primary-blue': '#264653',
