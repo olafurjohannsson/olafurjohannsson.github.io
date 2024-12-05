@@ -5,8 +5,9 @@ import { Home } from './home';
 import { About } from './about';
 import { Header } from './header';
 import { Footer } from './footer';
+import { Projects } from './projects';
 
-import "./input.css"
+import "../input.css"
 
 // Render your React component instead
 const root = createRoot(document.getElementById('app'));
@@ -20,6 +21,7 @@ root.render(
             
             <About />
 
+            <Projects />
             
         </main>
         

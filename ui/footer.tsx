@@ -6,7 +6,7 @@ export function Footer() {
             <footer className="bg-dark p-10 w-screen left-[calc(-50vw+50%)] relative md:p12 z-30">
                 <div
                     className="justify-between gap-10 sm:gap-12 grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-16 xl:flex max-w-8xl mx-auto lg:px-16">
-                    <div className="col-span-2 sm:col-span-1 border-t border-b hidden text-white border-t-white border-b-white py-8 sm:py-0 sm:border-none sm:block">
+                    {/* <div className="col-span-2 sm:col-span-1 border-t border-b hidden text-white border-t-white border-b-white py-8 sm:py-0 sm:border-none sm:block">
                         <h2 className="text-xl mb-2 text-light">Services</h2>
                         <ul className="grid grid-cols-2 gap-x-7 items-center sm:block">
                             <li className="py-2"><span className="lg:text-base">General Programming</span></li>
@@ -14,7 +14,7 @@ export function Footer() {
                             <li className="py-2"><span className="lg:text-base">App Development</span></li>
                             <li className="py-2"><span className="lg:text-base">Frontend and Backend Engineering</span></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="px-8">
                         <h2 className="text-xl mb-2">Socials</h2>
                         <ul>
@@ -69,9 +69,15 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div className="col-span-2 sm:col-span-1">
+                    {/* <div className="col-span-2 sm:col-span-1">
                         <h2 className="text-xl mb-2 text-light">Contact for freelance work</h2>
-                    </div>
+                    </div> */}
+                </div>
+                <div className="mt-16 mx-auto w-full">
+                    <div className="text-sm text-gray-500 text-center w-full dark:text-gray-400">
+                        © 2024
+                        <a href="https://www.linkedin.com/in/%C3%B3lafur-aron-j%C3%B3hannsson-30382340/"
+                            className="hover:underline">  Ólafur Aron Design</a>. All Rights Reserved.</div>
                 </div>
             </footer>
         </>
