@@ -2,10 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom base styles */
+@layer base {
+  body {
+    font-feature-settings: 'cv01', 'cv02', 'cv03', 'cv04'; /* Better Inter rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Better heading hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+/* Your existing custom classes */
 .text_light_all * {
     --tw-text-opacity: 1;
     color: rgb(246 246 246/var(--tw-text-opacity))
 }
+
 .size-6 {
     width: 3rem;
     height: 3rem;
