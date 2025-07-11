@@ -28,33 +28,15 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/img/logo1.png">
     
-    <!-- Font - Choose ONE of these options -->
-    
-    <!-- Option 1: Inter (Modern, Clean, Professional) -->
+    <!-- Font - Inter Only -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Option 2: Poppins (Friendly, Modern) - Alternative -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Option 3: JetBrains Mono (If you want to keep monospace) - Alternative -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     
     <style>
-        /* Hamburger menu animations */
-        .menu-btn:checked + label span {
-            transform: rotate(45deg);
-        }
-
-        .menu-btn:checked + label span::after {
-            transform: rotate(-90deg);
-            top: 0;
-        }
-
         /* Smooth scrolling for the whole page */
         html {
             scroll-behavior: smooth;
@@ -63,6 +45,11 @@
         /* Loading animation for better UX */
         #app {
             min-height: 100vh;
+        }
+        
+        /* Ensure canvas doesn't interfere with interactions */
+        canvas {
+            pointer-events: none;
         }
     </style>
 </head>
@@ -76,21 +63,7 @@
     </div>
     
     <!-- Scripts -->
-    <script type="module" src="/index.jsx"></script>
-    <script src="./TweenMax.min.js"></script>
-    <script src="./anima.js"></script>
-    
-    <script>
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-        
-        window.addEventListener('load', () => {
-            if (typeof start === 'function') {
-                start(isMobile());
-            }
-        });
-    </script>
+    <script type="module" src="/ui/index.tsx"></script>
 </body>
 
 </html>
